@@ -1,13 +1,13 @@
-package todo.todo.core.service;
+package todo.todo.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import todo.todo.core.model.SetDoneParam;
-import todo.todo.core.model.Todo;
-import todo.todo.core.model.UpdateTodoParam;
+import todo.todo.model.Todo;
+import todo.todo.request.SetDoneRequest;
+import todo.todo.request.UpdateTodoRequest;
 
 @Service
 public class TodoService {
@@ -31,7 +31,7 @@ public class TodoService {
     return data.size();
   }
 
-  public Todo updateTodo(String id, UpdateTodoParam payload) {
+  public Todo updateTodo(String id, UpdateTodoRequest payload) {
     for (int i = 0; i < data.size(); i++) {
       Todo current = data.get(i);
       if (current.getId().equals(id)) {
@@ -44,7 +44,7 @@ public class TodoService {
     return null;
   }
 
-  public Todo setDone(String id, SetDoneParam payload) {
+  public Todo setDone(String id, SetDoneRequest payload) {
     for (int i = 0; i < data.size(); i++) {
       Todo current = data.get(i);
       if (current.getId().equals(id)) {

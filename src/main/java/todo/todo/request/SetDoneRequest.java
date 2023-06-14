@@ -1,6 +1,6 @@
-package todo.todo.core.model;
+package todo.todo.request;
 
-public class SetDoneParam {
+public class SetDoneRequest {
   private boolean done;
 
   public boolean getDone() {

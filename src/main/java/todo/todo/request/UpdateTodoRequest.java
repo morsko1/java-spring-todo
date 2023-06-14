@@ -1,6 +1,6 @@
-package todo.todo.core.model;
+package todo.todo.request;
 
-public class UpdateTodoParam {
+public class UpdateTodoRequest {
   private String title;
   private boolean done;
 

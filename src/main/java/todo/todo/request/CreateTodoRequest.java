@@ -1,6 +1,6 @@
-package todo.todo.core.model;
+package todo.todo.request;
 
-public class CreateTodoParam {
+public class CreateTodoRequest {
   private String title;
 
   public String getTitle() {

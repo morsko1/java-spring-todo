@@ -1,4 +1,4 @@
-package todo.todo.core.model;
+package todo.todo.model;
 
 import java.util.Date;
 import java.util.UUID;
